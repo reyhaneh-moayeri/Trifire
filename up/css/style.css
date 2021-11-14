@@ -1,0 +1,271 @@
+.header {
+  width: calc(13rem + 4vw);
+  height: 100vh;
+  background-color: #10ac84;
+  border-radius: 0 3rem 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.header__logo {
+  font-family: "Mochiy Pop P One", sans-serif;
+  letter-spacing: 0.3rem;
+  margin-top: 5rem;
+}
+
+.header__logo span {
+  color: #ccc;
+}
+
+.header__nav {
+  height: 50%;
+  margin-top: 5rem;
+}
+
+.header__nav--links {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.header__nav--links__link {
+  list-style-type: none;
+}
+
+.header__nav--links__link a {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.header__nav--links__link a i {
+  margin-right: 1rem;
+}
+
+.header__nav--links__link.active a {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header__signout {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  margin-top: 8rem;
+  cursor: pointer;
+}
+
+.header__signout p {
+  margin-left: 1rem;
+}
+
+.main {
+  display: grid;
+  height: 100vh;
+  width: calc(100vw - calc(15rem + 5vw));
+  grid-template-rows: min-content 90vh;
+  grid-template-columns: [container-start] repeat(4, 1fr) [container-end];
+  position: absolute;
+  right: 0;
+}
+
+.main__header {
+  grid-column: container-start / container-end;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.main__header--title {
+  text-align: left;
+  font-size: calc(1.5rem + 1vw);
+}
+
+.main__header--detail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 80%;
+}
+
+.main__header--avatar {
+  width: 3rem;
+  height: 3rem;
+}
+
+.main__header--avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.main__header--tags {
+  flex-shrink: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.main__header--tags__tag {
+  font-size: calc(0.5rem + 0.5vw);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.main__header--tags__tag:first-of-type {
+  background-color: rgba(240, 82, 82, 0.2);
+  color: red;
+}
+
+.main__header--tags__tag:nth-of-type(2) {
+  background-color: rgba(106, 82, 240, 0.2);
+  color: blue;
+  margin-left: 1rem;
+}
+
+.main__header--searchbox {
+  border-radius: 0.5rem;
+  position: relative;
+  color: #ccc;
+}
+
+.main__header--searchbox input {
+  padding-left: 4rem;
+  padding-right: 2rem;
+  top: 0;
+  left: 0;
+  width: calc(4rem + 20vw);
+  border-radius: 1rem;
+  height: 4rem;
+  background-color: #f5f6fa;
+  border: none;
+  outline: none;
+}
+
+.main__header--searchbox i {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.main__header--notification {
+  margin: 0 2rem;
+}
+
+.main__header--notification__icon {
+  background-color: #f5f6fa;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.main__header--notification__icon i {
+  position: relative;
+  font-size: 2rem;
+}
+
+.main__header--notification__icon i::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.main__header--notification .notification__content {
+  position: absolute;
+  width: 12rem;
+  height: 5rem;
+  transform: translateX(-50%);
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 0.5rem;
+  visibility: none;
+  opacity: 0;
+}
+
+.main__header--notification .notification__content i {
+  cursor: pointer;
+  background-color: red;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 50%;
+}
+
+.main__header--notification .notification__content.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.main__body {
+  grid-column: container-start / container-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: min-content;
+  grid-gap: 2rem;
+  padding: 0 2rem;
+}
+
+card-container i {
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+card-container:first-of-type i:first-child {
+  background-color: #74b9ff;
+  color: #0563ac;
+}
+
+card-container:nth-of-type(2) i:first-child,
+card-container:nth-of-type(3) i:first-child {
+  background-color: rgba(230, 126, 34, 0.5);
+  color: #e67e22;
+}
+
+card-container:last-of-type i:first-child {
+  background-color: rgba(231, 76, 60, 0.5);
+  color: #e74c3c;
+}
+
+user-card {
+  margin: 1rem 0;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  font-family: "Mochiy Pop One", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>TriFire</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__logo">Tri<span>Fire</span></h1>
+      <nav class="header__nav">
+        <ul class="header__nav--links">
+          <li class="header__nav--links__link">
+            <a href="#">
+              <i class="fas fa-home"></i>
+              <p>Home</p>
+            </a>
+          </li>
+          <li class="header__nav--links__link active">
+            <a href="#">
+              <i class="fab fa-adn"></i>
+              <p>Deals</p>
+            </a>
+          </li>
+          <li class="header__nav--links__link">
+            <a href="#">
+              <i class="fas fa-envelope"></i>
+              <p>Mail</p>
+            </a>
+          </li>
+          <li class="header__nav--links__link">
+            <a href="#">
+              <i class="fas fa-chart-line"></i>
+              <p>Activities</p>
+            </a>
+          </li>
+          <li class="header__nav--links__link">
+            <a href="#">
+              <i class="fas fa-user-friends"></i>
+              <p>Contacts</p>
+            </a>
+          </li>
+          <li class="header__nav--links__link">
+            <a href="#">
+              <i class="fas fa-cog"></i>
+              <p>Settings</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__signout">
+        <i class="fas fa-sign-out-alt"></i>
+        <p>Sign out</p>
+      </div>
+    </header>
+    <main class="main">
+      <header class="main__header">
+        <h2 class="main__header--title">Deals</h2>
+        <div class="main__header--detail">
+          <div class="main__header--tags">
+            <a href="#" class="main__header--tags__tag">14 active deals</a>
+            <a href="#" class="main__header--tags__tag">$28,634</a>
+          </div>
+          <div class="main__header--searchbox">
+            <i class="fas fa-search"></i>
+            <input type="search" placeholder="search something..." />
+          </div>
+          <div class="main__header--notification">
+            <div class="main__header--notification__icon">
+              <i class="far fa-bell"></i>
+            </div>
+            <div class="notification__content">
+              <p class="notif">Notification!</p>
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="main__header--avatar">
+            <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="" />
+          </div>
+        </div>
+      </header>
+      <div class="main__body">
+        <!-- card container 1 -->
+        <card-container title="Leads">
+          <i slot="icon" class="fab fa-leanpub"></i>
+          <user-card
+            name="Cody Fremoon"
+            price="$1,200"
+            avatar="https://randomuser.me/api/portraits/men/1.jpg"
+            slot="card"
+            bg="#0097e6"
+            tag="glass"
+            tag2="liquid"
+            color="#fff"
+            tagbg="rgba(92, 147, 203, 0.5)"
+          >
+          </user-card>
+          <!-- card 2 -->
+          <user-card
+            name="Cordelia Harper"
+            price="$800"
+            avatar="https://randomuser.me/api/portraits/men/2.jpg"
+            slot="card"
+            bg="#fbc531"
+            tag="medical supplies"
+            tagbg="rgba(92, 147, 203, 0.5)"
+          ></user-card>
+          <!-- card 3 -->
+          <user-card
+            name="Annie Corlson"
+            price="$2,500"
+            avatar="https://randomuser.me/api/portraits/men/3.jpg"
+            slot="card"
+            bg="#9c88ff"
+            tag="household appliences"
+            tagbg="rgba(242, 85, 38,.5)"
+          ></user-card>
+          <i slot="dots" class="fas fa-ellipsis-h"></i>
+        </card-container>
+        <card-container title="Introduction">
+          <i slot="icon" class="fas fa-edit"></i>
+          <!-- card 1 -->
+          <user-card
+            name="Charlotte Buchanan"
+            price="$500"
+            avatar="https://randomuser.me/api/portraits/men/4.jpg"
+            slot="card"
+            bg="#e84118"
+            tag="electronics"
+            tagbg="rgba(92, 147, 203, 0.5)"
+          ></user-card>
+          <!-- card 2 -->
+          <user-card
+            name="Erik Leonard"
+            price="$1,200"
+            avatar="https://randomuser.me/api/portraits/men/5.jpg"
+            slot="card"
+            bg="#FDA7DF"
+            tag="printed materials"
+            tagbg="rgba(230, 126, 34, 0.5)"
+          ></user-card>
+          <!-- card 3 -->
+          <user-card
+            name="Harriet Lambert"
+            price="$1,300"
+            avatar="https://randomuser.me/api/portraits/men/6.jpg"
+            slot="card"
+            bg="#EE5A24"
+            tag="exhebition exhibis"
+            tagbg="rgba(92, 147, 203, 0.5)"
+          ></user-card>
+          <!-- card 4 -->
+          <user-card
+            name="Ray Miller"
+            price="$3,000"
+            avatar="https://randomuser.me/api/portraits/men/6.jpg"
+            slot="card"
+            bg="#EE5A24"
+            tag="personal item"
+            tagbg="rgba(92, 147, 203, 0.5)"
+          ></user-card>
+          <i slot="dots" class="fas fa-ellipsis-h"></i>
+        </card-container>
+        <!-- meetings -->
+        <card-container title="Meetings">
+          <i slot="icon" class="fas fa-users"></i>
+          <!-- card 1 -->
+          <user-card
+            name="Aiden Cobb"
+            price="$8,600"
+            avatar="https://randomuser.me/api/portraits/men/7.jpg"
+            slot="card"
+            bg="#6F1E51"
+            tag="industrial appliances"
+            tagbg="rgba(92, 147, 203, 0.5)"
+          ></user-card>
+          <!-- card 2 -->
+          <user-card
+            name="Cody fremoon"
+            price="$8,400"
+            avatar="https://randomuser.me/api/portraits/men/8.jpg"
+            slot="card"
+            bg="#9980FA"
+            tag="crop protection"
+            tagbg="rgba(92, 147, 203, 0.5)"
+          ></user-card>
+          <i slot="dots" class="fas fa-ellipsis-h"></i>
+        </card-container>
+        <card-container title="Contact">
+          <i slot="icon" class="fas fa-file-contract"></i>
+          <!-- card 1 -->
+          <user-card
+            name="Nettie Guzman"
+            price="$3,200"
+            avatar="https://randomuser.me/api/portraits/men/9.jpg"
+            slot="card"
+            bg="#ED4C67"
+            tag="vehicle ports"
+            tagbg="rgba(92, 147, 203, 0.5)"
+          ></user-card>
+          <!-- card 2 -->
+          <user-card
+            name="Eugene Foster"
+            price="$2,100"
+            avatar="https://randomuser.me/api/portraits/men/10.jpg"
+            slot="card"
+            bg="#ff4757"
+            tag="electronics"
+            tag2="spare parts"
+            tagbg="rgba(92, 147, 203, 0.5)"
+          ></user-card>
+          <!-- card 3 -->
+          <user-card
+            name="Estella Chandler"
+            price="$4,950"
+            avatar="https://randomuser.me/api/portraits/men/11.jpg"
+            slot="card"
+            bg="#ff6b81"
+            tag="medical supplies"
+            color="#fff"
+            tagbg="rgba(92, 147, 203, 0.5)"
+          ></user-card>
+          <!-- card 4 -->
+          <user-card
+            name="Lucinda Coldwell"
+            price="$5,400"
+            avatar="https://randomuser.me/api/portraits/men/12.jpg"
+            slot="card"
+            bg="#70a1ff"
+            tag="household appliences"
+            tagbg="rgba(92, 147, 203, 0.5)"
+          ></user-card>
+          <!-- card 5 -->
+          <user-card
+            name="Jimmy Hampton"
+            price="$6,300"
+            avatar="https://randomuser.me/api/portraits/men/13.jpg"
+            slot="card"
+            bg="#747d8c"
+            tag="industrial appliences"
+            tagbg="rgba(92, 147, 203, 0.5)"
+          ></user-card>
+          <i slot="dots" class="fas fa-ellipsis-h"></i>
+        </card-container>
+      </div>
+    </main>
+    <script src="./js/nav-link.js"></script>
+    <script src="./js/notif.js"></script>
+    <script src="./js/card.js"></script>
+    <script src="./js/cardsContainer.js"></script>
+  </body>
+</html>

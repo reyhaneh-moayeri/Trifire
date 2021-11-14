@@ -1,0 +1,23 @@
+@import "./header";
+@import "./main";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  font-family: "Mochiy Pop One", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}

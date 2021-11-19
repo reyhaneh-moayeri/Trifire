@@ -13,123 +13,18 @@
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    &--title {
-      text-align: left;
-      font-size: calc(1.5rem + 1vw);
-    }
+  }
 
-    &--detail {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      width: 80%;
-    }
-    &--avatar {
-      width: 3rem;
-      height: 3rem;
-      img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-      }
-    }
+  &__title {
+    text-align: left;
+    font-size: calc(1.5rem + 1vw);
+  }
 
-    &--tags {
-      flex-shrink: 0;
-      flex-grow: 1;
-      text-align: center;
-      &__tag {
-        font-size: calc(0.5rem + 0.5vw);
-        padding: 1rem 1.5rem;
-        border-radius: 1rem;
-      }
-      &__tag:first-of-type {
-        background-color: rgba(240, 82, 82, 0.2);
-        color: red;
-      }
-      &__tag:nth-of-type(2) {
-        background-color: rgba(106, 82, 240, 0.2);
-        color: blue;
-        margin-left: 1rem;
-      }
-    }
-
-    &--searchbox {
-      border-radius: 0.5rem;
-      position: relative;
-      color: #ccc;
-      input {
-        padding-left: 4rem;
-        padding-right: 2rem;
-        top: 0;
-        left: 0;
-        width: calc(4rem + 20vw);
-        border-radius: 1rem;
-        height: 4rem;
-        background-color: #f5f6fa;
-        border: none;
-        outline: none;
-      }
-      i {
-        position: absolute;
-        z-index: 2;
-        left: 0;
-        top: 50%;
-        transform: translate(50%, -50%);
-        margin-left: 0.5rem;
-        font-size: 1.5rem;
-        cursor: pointer;
-      }
-    }
-
-    &--notification {
-      margin: 0 2rem;
-      &__icon {
-        background-color: #f5f6fa;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        cursor: pointer;
-        i {
-          position: relative;
-          font-size: 2rem;
-        }
-        i::after {
-          position: absolute;
-          content: "";
-          right: 0;
-          width: 0.5rem;
-          height: 0.5rem;
-          border-radius: 50%;
-          background-color: red;
-        }
-      }
-
-      .notification__content {
-        position: absolute;
-        width: 12rem;
-        height: 5rem;
-        transform: translateX(-50%);
-        background-color: #ccc;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        margin-top: 0.5rem;
-        visibility: none;
-        opacity: 0;
-
-        i {
-          cursor: pointer;
-          background-color: red;
-          color: #fff;
-          padding: 0.8rem;
-          border-radius: 50%;
-        }
-      }
-      .notification__content.active {
-        visibility: visible;
-        opacity: 1;
-      }
-    }
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 80%;
   }
 
   &__body {
@@ -139,6 +34,116 @@
     grid-template-rows: min-content;
     grid-gap: 2rem;
     padding: 0 2rem;
+  }
+}
+
+.heading {
+  &__tags {
+    flex-shrink: 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  &__tag {
+    font-size: calc(0.5rem + 0.5vw);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+  }
+  &__tag:first-of-type {
+    background-color: rgba(240, 82, 82, 0.2);
+    color: red;
+  }
+  &__tag:nth-of-type(2) {
+    background-color: rgba(106, 82, 240, 0.2);
+    color: blue;
+    margin-left: 1rem;
+  }
+
+  &__searchbox {
+    border-radius: 0.5rem;
+    position: relative;
+    color: #ccc;
+    input {
+      padding-left: 4rem;
+      padding-right: 2rem;
+      top: 0;
+      left: 0;
+      width: calc(4rem + 20vw);
+      border-radius: 1rem;
+      height: 4rem;
+      background-color: #f5f6fa;
+      border: none;
+      outline: none;
+    }
+    i {
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      top: 50%;
+      transform: translate(50%, -50%);
+      margin-left: 0.5rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+
+  &__notification {
+    margin: 0 2rem;
+    .notification__icon {
+      background-color: #f5f6fa;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      i {
+        position: relative;
+        font-size: 2rem;
+      }
+      i::after {
+        position: absolute;
+        content: "";
+        right: 0;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: red;
+      }
+    }
+
+    .notification__content {
+      position: absolute;
+      width: 12rem;
+      height: 5rem;
+      transform: translateX(-50%);
+      background-color: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 0.5rem;
+      visibility: none;
+      opacity: 0;
+
+      i {
+        cursor: pointer;
+        background-color: red;
+        color: #fff;
+        padding: 0.8rem;
+        border-radius: 50%;
+      }
+    }
+    .notification__content.active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__avatar {
+    width: 5rem;
+    height: 5rem;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
   }
 }
 

@@ -23,31 +23,31 @@
   &__nav {
     height: 50%;
     margin-top: 5rem;
+  }
 
-    &--links {
+  &__links {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+  &__link {
+    list-style-type: none;
+    a {
       display: flex;
-      flex-direction: column;
-      height: 100%;
-      justify-content: space-between;
-      &__link {
-        list-style-type: none;
-        a {
-          display: flex;
-          color: #fff;
-          text-decoration: none;
-          font-size: 1.3rem;
-          padding: 1rem 1.5rem;
-          border-radius: 1rem;
-          i {
-            margin-right: 1rem;
-          }
-        }
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.3rem;
+      padding: 1rem 1.5rem;
+      border-radius: 1rem;
+      i {
+        margin-right: 1rem;
       }
-      &__link.active {
-        a {
-          background-color: rgba(255, 255, 255, 0.2);
-        }
-      }
+    }
+  }
+  &__link.header__link--active {
+    a {
+      background-color: rgba(255, 255, 255, 0.2);
     }
   }
 

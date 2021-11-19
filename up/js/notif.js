@@ -1,5 +1,5 @@
-const bell = document.querySelector(".main__header--notification__icon");
-const bellContainer = document.querySelector(".main__header--notification");
+const bell = document.querySelector(".notification__icon");
+const bellContainer = document.querySelector(".heading__notification");
 const notifContent = document.querySelector(".notification__content");
 const removeIcon = document.querySelector(".fa-times");
 
@@ -17,7 +17,7 @@ document.addEventListener("keydown", (e) => {
 });
 
 document.addEventListener("click", (e) => {
-  if (!e.target.closest(".main__header--notification")) {
+  if (!e.target.closest(".heading__notification")) {
     closeModal();
   }
 });

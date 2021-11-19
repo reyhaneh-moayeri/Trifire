@@ -1,18 +1,19 @@
 const template = document.createElement("template");
 template.innerHTML = `
 <style>
+*{
+  margin: 0;
+}
 .card{
     width: 75%;
-    height:10rem;
     border-radius: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
     background-color: #fff;
     margin: auto;
-    transition: all 1s ease;
+    transition: 1s ease;
+    display:grid;
+    grid-template-rows: repeat(3,min-content)
 
 }
 .card:hover{
@@ -21,7 +22,13 @@ template.innerHTML = `
 }
 
 h3{
-    margin-bottom: .2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+p{
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin: 1rem 0;
 }
 .profile{
     display: flex;
@@ -39,25 +46,42 @@ h3{
     display: flex;
     flex-shrink: 0;
 }
+
 .tag{
     background-color: var(--tagbg);
     padding:.5rem 1rem;
     border-radius: .5rem;
     color: #fff;
-    font-size: .8rem;
+      font-size: 1rem;
 }
 .tag2{
     background-color: var(--tagbg);
     padding:.5rem 1rem;
     border-radius: .5rem;
-    font-size: .8rem;
     margin-left: .3rem;
     color: #fff;
+      font-size: 1rem;
+}
+
+.card__status{
+  width:1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: red;
+  transition: .5s ease;
+}
+.card__heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 </style>
 
 <div class="card">
+<div class="card__heading">
 <h3></h3>
+<div class="card__status"></div>
+</div>
 <p></p>
 
 <div class="profile">
@@ -97,14 +121,18 @@ class UserCard extends HTMLElement {
   }
 
   mouseoverbg() {
-    this.style.transform = "scale(1.1) translateX(.5rem)";
+    this.style.transform = "scale(1.12) translateX(1rem)";
   }
   connectedCallback() {
     this.shadowRoot.querySelector(".card").addEventListener("mouseover", () => {
       this.mouseoverbg();
+      this.shadowRoot.querySelector(".card__status").style.transform =
+        "scale(1.5)";
     });
     this.shadowRoot.querySelector(".card").addEventListener("mouseout", () => {
       this.style.transform = "scale(1) translateX(0)";
+      this.shadowRoot.querySelector(".card__status").style.transform =
+        "scale(1)";
     });
   }
 

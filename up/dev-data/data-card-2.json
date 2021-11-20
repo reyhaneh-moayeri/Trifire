@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Charlatte Buchanan",
+    "price": "$500",
+    "avatar": "https://randomuser.me/api/portraits/men/4.jpg",
+    "slot": "card",
+    "bg": "#ff4757",
+    "tag": "electronics",
+    "tagbg": "rgba(92, 147, 203, 0.5)"
+  },
+  {
+    "id": 2,
+    "name": "Erik Leonard",
+    "price": "$6,200",
+    "avatar": "https://randomuser.me/api/portraits/men/5.jpg",
+    "slot": "card",
+    "bg": "#ff4757",
+    "tag": "printed materials",
+    "tagbg": "rgba(92, 147, 203, 0.5)"
+  },
+  {
+    "id": 3,
+    "name": "Harrief Lambert",
+    "price": "$1,300",
+    "avatar": "https://randomuser.me/api/portraits/men/6.jpg",
+    "slot": "card",
+    "bg": "#ff4757",
+    "tag": "exhebition exhibits",
+    "tagbg": "rgba(92, 147, 203, 0.5)"
+  },
+  {
+    "id": 4,
+    "name": "Ray Miller",
+    "price": "$3,000",
+    "avatar": "https://randomuser.me/api/portraits/men/7.jpg",
+    "slot": "card",
+    "bg": "#ff4757",
+    "tag": "personal items",
+    "tagbg": "rgba(92, 147, 203, 0.5)"
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "name": "Nettie Guzman",
+    "price": "$3,200",
+    "avatar": "https://randomuser.me/api/portraits/men/10.jpg",
+    "slot": "card",
+    "bg": "#ff4757",
+    "tag": "vehicle parts",
+    "tagbg": "rgba(92, 147, 203, 0.5)"
+  },
+  {
+    "id": 2,
+    "name": "Eugene Foster",
+    "price": "$6,200",
+    "avatar": "https://randomuser.me/api/portraits/men/11.jpg",
+    "slot": "card",
+    "bg": "#ff4757",
+    "tag": "electronics",
+    "tag2": "spare parts",
+    "tagbg": "rgba(92, 147, 203, 0.5)"
+  },
+  {
+    "id": 3,
+    "name": "Estella Chandler",
+    "price": "$4,950",
+    "avatar": "https://randomuser.me/api/portraits/men/12.jpg",
+    "slot": "card",
+    "bg": "#ff4757",
+    "tag": "medical supplies",
+    "tagbg": "rgba(92, 147, 203, 0.5)"
+  },
+  {
+    "id": 4,
+    "name": "Lucinda Coldwell",
+    "price": "$5,400",
+    "avatar": "https://randomuser.me/api/portraits/men/13.jpg",
+    "slot": "card",
+    "bg": "#ff4757",
+    "tag": "household appliences",
+    "tagbg": "rgba(92, 147, 203, 0.5)"
+  },
+  {
+    "id": 5,
+    "name": "Jimmy Hampton",
+    "price": "$5,400",
+    "avatar": "https://randomuser.me/api/portraits/men/14.jpg",
+    "slot": "card",
+    "bg": "#ff4757",
+    "tag": "industrial appliences",
+    "tagbg": "rgba(92, 147, 203, 0.5)"
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "name": "Cody Freeman",
+    "price": "$1,200",
+    "avatar": "https://randomuser.me/api/portraits/men/1.jpg",
+    "slot": "card",
+    "bg": "#ff4757",
+    "tag": "glass",
+    "tag2": "liquid",
+    "tagbg": "rgba(92, 147, 203, 0.5)"
+  },
+  {
+    "id": 2,
+    "name": "Cordelia Harper",
+    "price": "$800",
+    "avatar": "https://randomuser.me/api/portraits/men/2.jpg",
+    "slot": "card",
+    "bg": "#ff4757",
+    "tag": "medical supplies",
+    "tagbg": "rgba(92, 147, 203, 0.5)"
+  },
+  {
+    "id": 3,
+    "name": "Annie Carlson",
+    "price": "$2,500",
+    "avatar": "https://randomuser.me/api/portraits/men/3.jpg",
+    "slot": "card",
+    "bg": "#ff4757",
+    "tag": "household appliances",
+    "tagbg": "rgba(92, 147, 203, 0.5)"
+  }
+]

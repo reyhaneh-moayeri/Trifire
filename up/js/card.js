@@ -18,7 +18,6 @@ template.innerHTML = `
 }
 .card:hover{
     background-color: var(--bg);
-    color: #fff;
 }
 
 h3{
@@ -51,7 +50,7 @@ p{
     background-color: var(--tagbg);
     padding:.5rem 1rem;
     border-radius: .5rem;
-    color: #fff;
+    // color: #fff;
       font-size: 1rem;
 }
 .tag2{
@@ -59,7 +58,7 @@ p{
     padding:.5rem 1rem;
     border-radius: .5rem;
     margin-left: .3rem;
-    color: #fff;
+    // color: #fff;
       font-size: 1rem;
 }
 

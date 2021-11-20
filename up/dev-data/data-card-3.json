@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Aiden Cobb",
+    "price": "$8,600",
+    "avatar": "https://randomuser.me/api/portraits/men/4.jpg",
+    "slot": "card",
+    "bg": "#ff4757",
+    "tag": "industrial appliances",
+    "tagbg": "rgba(92, 147, 203, 0.5)"
+  },
+  {
+    "id": 2,
+    "name": "Lucinda Coldwell",
+    "price": "$6,200",
+    "avatar": "https://randomuser.me/api/portraits/men/5.jpg",
+    "slot": "card",
+    "bg": "#ff4757",
+    "tag": "crop protection materials",
+    "tagbg": "rgba(92, 147, 203, 0.5)"
+  }
+]

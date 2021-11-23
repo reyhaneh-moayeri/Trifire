@@ -24,57 +24,35 @@
       referrerpolicy="no-referrer"
     />
     <script defer src="./js/notif.js"></script>
+    <script defer src="./js/link.js"></script>
+    <script defer src="./js/sidebar.js"></script>
     <script defer src="./js/card.js"></script>
     <script defer src="./js/cardsContainer.js"></script>
     <script defer src="./js/user-cards-components.js"></script>
     <title>TriFire</title>
   </head>
   <body>
-    <!-- header block -->
     <header class="header">
-      <h1 class="header__logo">Tri<span>Fire</span></h1>
-      <!-- nav element-->
-      <nav class="header__nav">
-        <ul class="header__links">
-          <li class="header__link">
-            <a href="#">
-              <i class="fas fa-home"></i>
-              <p>Home</p>
-            </a>
-          </li>
-          <li class="header__link header__link--active">
-            <a href="#">
-              <i class="fab fa-adn"></i>
-              <p>Deals</p>
-            </a>
-          </li>
-          <li class="header__link">
-            <a href="#">
-              <i class="fas fa-envelope"></i>
-              <p>Mail</p>
-            </a>
-          </li>
-          <li class="header__link">
-            <a href="#">
-              <i class="fas fa-chart-line"></i>
-              <p>Activities</p>
-            </a>
-          </li>
-          <li class="header__link">
-            <a href="#">
-              <i class="fas fa-user-friends"></i>
-              <p>Contacts</p>
-            </a>
-          </li>
-          <li class="header__link">
-            <a href="#">
-              <i class="fas fa-cog"></i>
-              <p>Settings</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-
+      <side-bar>
+        <side-link title="Home " slot="link">
+          <i slot="icon" class="fas fa-home"></i>
+        </side-link>
+        <side-link title="Deals" slot="link">
+          <i slot="icon" class="fab fa-adn"></i>
+        </side-link>
+        <side-link title="Mail" slot="link">
+          <i slot="icon" class="fas fa-envelope"></i>
+        </side-link>
+        <side-link title="Activities" slot="link">
+          <i slot="icon" class="fas fa-chart-line"></i>
+        </side-link>
+        <side-link title="Contacts" slot="link">
+          <i slot="icon" class="fas fa-user-friends"></i>
+        </side-link>
+        <side-link title="Settings" slot="link">
+          <i slot="icon" class="fas fa-cogs"></i>
+        </side-link>
+      </side-bar>
       <div class="header__signout">
         <i class="fas fa-sign-out-alt"></i>
         <p>Sign out</p>

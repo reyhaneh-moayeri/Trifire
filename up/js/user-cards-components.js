@@ -14,6 +14,7 @@ fetch("./dev-data/data-card-1.json")
             slot="card"
             bg=${data[i].bg}
             tag=${data[i].tag}
+            status=${data[i].status}
             tagbg="rgba(92, 147, 203, 0.5)"></user-card>`
       );
     }
@@ -32,6 +33,7 @@ fetch("./dev-data/data-card-2.json")
             slot="card"
             bg=${data[i].bg}
             tag=${data[i].tag}
+            status=${data[i].status}
             tagbg="rgba(92, 147, 203, 0.5)"></user-card>`
       );
     }
@@ -50,6 +52,7 @@ fetch("./dev-data/data-card-3.json")
             slot="card"
             bg=${data[i].bg}
             tag=${data[i].tag}
+            status=${data[i].status}
             tagbg="rgba(92, 147, 203, 0.5)"></user-card>`
       );
     }
@@ -67,6 +70,7 @@ fetch("./dev-data/data-card-4.json")
             slot="card"
             bg=${data[i].bg}
             tag=${data[i].tag}
+            status=${data[i].status}
             tagbg="rgba(92, 147, 203, 0.5)"></user-card>`
       );
     }

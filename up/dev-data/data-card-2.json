@@ -5,9 +5,10 @@
     "price": "$500",
     "avatar": "https://randomuser.me/api/portraits/men/4.jpg",
     "slot": "card",
-    "bg": "#ff4757",
+    "bg": "#9980FA",
     "tag": "electronics",
-    "tagbg": "rgba(92, 147, 203, 0.5)"
+    "tagbg": "rgba(92, 147, 203, 0.5)",
+    "status": "#2ecc71"
   },
   {
     "id": 2,
@@ -15,9 +16,10 @@
     "price": "$6,200",
     "avatar": "https://randomuser.me/api/portraits/men/5.jpg",
     "slot": "card",
-    "bg": "#ff4757",
+    "bg": "#9980FA",
     "tag": "printed materials",
-    "tagbg": "rgba(92, 147, 203, 0.5)"
+    "tagbg": "rgba(92, 147, 203, 0.5)",
+    "status": "#2ecc71"
   },
   {
     "id": 3,
@@ -25,9 +27,10 @@
     "price": "$1,300",
     "avatar": "https://randomuser.me/api/portraits/men/6.jpg",
     "slot": "card",
-    "bg": "#ff4757",
+    "bg": "#9980FA",
     "tag": "exhebition exhibits",
-    "tagbg": "rgba(92, 147, 203, 0.5)"
+    "tagbg": "rgba(92, 147, 203, 0.5)",
+    "status": "#f1c40f"
   },
   {
     "id": 4,
@@ -35,8 +38,9 @@
     "price": "$3,000",
     "avatar": "https://randomuser.me/api/portraits/men/7.jpg",
     "slot": "card",
-    "bg": "#ff4757",
+    "bg": "#9980FA",
     "tag": "personal items",
-    "tagbg": "rgba(92, 147, 203, 0.5)"
+    "tagbg": "rgba(92, 147, 203, 0.5)",
+    "status": "#2ecc71"
   }
 ]

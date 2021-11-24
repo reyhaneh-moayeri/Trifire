@@ -5,9 +5,10 @@
     "price": "$8,600",
     "avatar": "https://randomuser.me/api/portraits/men/4.jpg",
     "slot": "card",
-    "bg": "#ff4757",
+    "bg": "#2ecc71",
     "tag": "industrial appliances",
-    "tagbg": "rgba(92, 147, 203, 0.5)"
+    "tagbg": "rgba(92, 147, 203, 0.5)",
+    "status": "#f1c40f"
   },
   {
     "id": 2,
@@ -15,8 +16,9 @@
     "price": "$6,200",
     "avatar": "https://randomuser.me/api/portraits/men/5.jpg",
     "slot": "card",
-    "bg": "#ff4757",
+    "bg": "#fbc531",
     "tag": "crop protection materials",
-    "tagbg": "rgba(92, 147, 203, 0.5)"
+    "tagbg": "rgba(92, 147, 203, 0.5)",
+    "status": "#2ecc71"
   }
 ]

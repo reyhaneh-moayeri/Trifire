@@ -18,6 +18,7 @@ template.innerHTML = `
 }
 .card:hover{
     background-color: var(--bg);
+    color: #fff;
 }
 
 h3{
@@ -50,7 +51,6 @@ p{
     background-color: var(--tagbg);
     padding:.5rem 1rem;
     border-radius: .5rem;
-    color: #fff;
     font-size: 1.1rem;
 }
 .tag2{
@@ -58,15 +58,17 @@ p{
     padding:.5rem 1rem;
     border-radius: .5rem;
     margin-left: .3rem;
-    color: #fff;
     font-size: 1.1rem;
+}
+.card:hover .tag{
+  color: #fff;
 }
 
 .card__status{
-  width:1rem;
-  height: 1rem;
+  width:1.2rem;
+  height: 1.2rem;
   border-radius: 50%;
-  background-color: red;
+  background-color: var(--status);
   transition: .5s ease;
 }
 .card__heading{
@@ -111,6 +113,9 @@ class UserCard extends HTMLElement {
     this.shadowRoot.querySelector(".tag").style = `--tagbg:${this.getAttribute(
       "tagbg"
     )}`;
+    this.shadowRoot.querySelector(
+      ".card__status"
+    ).style = `--status:${this.getAttribute("status")}`;
 
     if (this.shadowRoot.querySelector(".tag2").textContent) {
       this.shadowRoot.querySelector(
@@ -126,7 +131,7 @@ class UserCard extends HTMLElement {
     this.shadowRoot.querySelector(".card").addEventListener("mouseover", () => {
       this.mouseoverbg();
       this.shadowRoot.querySelector(".card__status").style.transform =
-        "scale(1.5)";
+        "scale(1.3)";
     });
     this.shadowRoot.querySelector(".card").addEventListener("mouseout", () => {
       this.style.transform = "scale(1) translateX(0)";

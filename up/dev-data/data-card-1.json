@@ -5,10 +5,11 @@
     "price": "$1,200",
     "avatar": "https://randomuser.me/api/portraits/men/1.jpg",
     "slot": "card",
-    "bg": "#ff4757",
+    "bg": "#00a8ff",
     "tag": "glass",
     "tag2": "liquid",
-    "tagbg": "rgba(92, 147, 203, 0.5)"
+    "tagbg": "rgba(92, 147, 203, 0.5)",
+    "status": "#f1c40f"
   },
   {
     "id": 2,
@@ -16,9 +17,10 @@
     "price": "$800",
     "avatar": "https://randomuser.me/api/portraits/men/2.jpg",
     "slot": "card",
-    "bg": "#ff4757",
+    "bg": "#00a8ff",
     "tag": "medical supplies",
-    "tagbg": "rgba(92, 147, 203, 0.5)"
+    "tagbg": "rgba(92, 147, 203, 0.5)",
+    "status": "#e74c3c"
   },
   {
     "id": 3,
@@ -26,8 +28,9 @@
     "price": "$2,500",
     "avatar": "https://randomuser.me/api/portraits/men/3.jpg",
     "slot": "card",
-    "bg": "#ff4757",
+    "bg": "#00a8ff",
     "tag": "household appliances",
-    "tagbg": "rgba(92, 147, 203, 0.5)"
+    "tagbg": "rgba(92, 147, 203, 0.5)",
+    "status": "#f1c40f"
   }
 ]

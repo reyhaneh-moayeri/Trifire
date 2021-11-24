@@ -7,7 +7,8 @@
     "slot": "card",
     "bg": "#ff4757",
     "tag": "vehicle parts",
-    "tagbg": "rgba(92, 147, 203, 0.5)"
+    "tagbg": "rgba(92, 147, 203, 0.5)",
+    "status": "#2ecc71"
   },
   {
     "id": 2,
@@ -18,7 +19,8 @@
     "bg": "#ff4757",
     "tag": "electronics",
     "tag2": "spare parts",
-    "tagbg": "rgba(92, 147, 203, 0.5)"
+    "tagbg": "rgba(92, 147, 203, 0.5)",
+    "status": "#2ecc71"
   },
   {
     "id": 3,
@@ -28,7 +30,8 @@
     "slot": "card",
     "bg": "#ff4757",
     "tag": "medical supplies",
-    "tagbg": "rgba(92, 147, 203, 0.5)"
+    "tagbg": "rgba(92, 147, 203, 0.5)",
+    "status": "#e74c3c"
   },
   {
     "id": 4,
@@ -38,7 +41,8 @@
     "slot": "card",
     "bg": "#ff4757",
     "tag": "household appliences",
-    "tagbg": "rgba(92, 147, 203, 0.5)"
+    "tagbg": "rgba(92, 147, 203, 0.5)",
+    "status": "#f1c40f"
   },
   {
     "id": 5,
@@ -48,6 +52,7 @@
     "slot": "card",
     "bg": "#ff4757",
     "tag": "industrial appliences",
-    "tagbg": "rgba(92, 147, 203, 0.5)"
+    "tagbg": "rgba(92, 147, 203, 0.5)",
+    "status": "#2ecc71"
   }
 ]

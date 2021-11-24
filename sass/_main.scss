@@ -44,6 +44,7 @@
     flex-shrink: 0;
     flex-grow: 1;
     text-align: center;
+    font-weight: 600;
   }
 
   &__tag {
@@ -56,7 +57,7 @@
     color: red;
   }
   &__tag:nth-of-type(2) {
-    background-color: rgba(106, 82, 240, 0.2);
+    background-color: rgba(118, 101, 212, 0.2);
     color: blue;
     margin-left: 1rem;
   }

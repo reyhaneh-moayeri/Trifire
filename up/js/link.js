@@ -45,6 +45,14 @@ class Link extends HTMLElement {
     this.shadowRoot.appendChild(link.content.cloneNode(true));
     this.shadowRoot.querySelector("p").innerText = this.getAttribute("title");
   }
+  static get observedAttributes() {
+    return ["title"];
+  }
+  attributeChangedCallback(title, oldValue, newValue) {
+    if (title === "title") {
+      this.shadowRoot.querySelector("p").innerText = newValue;
+    }
+  }
 }
 
 window.customElements.define("side-link", Link);

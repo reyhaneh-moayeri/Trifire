@@ -30,13 +30,13 @@ p{
   margin: 1rem 0;
 }
 .profile{
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .profile-pic img{
-    width: 3rem;
-    height:3rem;
-    border-radius: 50%;
+  width: 3rem;
+  height:3rem;
+  border-radius: 50%;
 
 }
 
@@ -50,16 +50,16 @@ p{
     background-color: var(--tagbg);
     padding:.5rem 1rem;
     border-radius: .5rem;
-    // color: #fff;
-      font-size: 1rem;
+    color: #fff;
+    font-size: 1.1rem;
 }
 .tag2{
     background-color: var(--tagbg);
     padding:.5rem 1rem;
     border-radius: .5rem;
     margin-left: .3rem;
-    // color: #fff;
-      font-size: 1rem;
+    color: #fff;
+    font-size: 1.1rem;
 }
 
 .card__status{
